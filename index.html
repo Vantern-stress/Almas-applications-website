@@ -156,9 +156,37 @@
   <section id="contact" class="bg-blue-900 text-white py-16 text-center">
     <h2 class="text-3xl font-semibold mb-6">Ready to get started?</h2>
     <p class="mb-8">Book a discovery call and let's turn your idea into a validated MVP.</p>
-    <a href="#contact" class="bg-amber-400 text-gray-900 font-semibold px-6 py-3 rounded shadow hover:bg-amber-500 transition">Book a Discovery Call</a>
+   <a href="#" id="open-modal" class="bg-amber-400 text-gray-900 font-semibold px-6 py-3 rounded shadow hover:bg-amber-500 transition">
+  Book a Discovery Call
+</a>
   </section>
 
   <script src="script.js"></script>
+  <!-- Modal Background -->
+<div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-8 relative">
+    <!-- Close Button -->
+    <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">&times;</button>
+    
+    <h2 class="text-2xl font-bold mb-4 text-center">Book a Discovery Call</h2>
+    
+    <form name="contact" method="POST" data-netlify="true" class="space-y-4">
+      <input type="hidden" name="form-name" value="contact">
+      
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-2 border border-gray-300 rounded">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-2 border border-gray-300 rounded">
+      <input type="text" name="role" placeholder="Role / Company" class="w-full p-2 border border-gray-300 rounded">
+      <textarea name="message" placeholder="Message / Idea Summary" required class="w-full p-2 border border-gray-300 rounded h-32"></textarea>
+      <input type="text" name="budget" placeholder="Budget Range" class="w-full p-2 border border-gray-300 rounded">
+      <input type="text" name="timeline" placeholder="Timeline" class="w-full p-2 border border-gray-300 rounded">
+
+      <div class="text-center">
+        <button type="submit" class="bg-teal-500 text-white px-6 py-2 rounded hover:bg-teal-600 transition">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
 </body>
 </html>
