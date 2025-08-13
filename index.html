@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Almas Applications</title>
+  <meta name="description" content="Almas Applications - Feasibility studies and MVP build for app startups." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-white text-gray-800 font-sans leading-relaxed">
+
+  <!-- Sticky Header -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <a href="#" class="text-2xl font-bold text-blue-800">Almas Applications</a>
+      <ul class="hidden md:flex space-x-6 text-gray-700">
+        <li><a href="#services" class="hover:text-teal-500">Services</a></li>
+        <li><a href="#packages" class="hover:text-teal-500">Packages</a></li>
+        <li><a href="#case-studies" class="hover:text-teal-500">Case Studies</a></li>
+        <li><a href="#resources" class="hover:text-teal-500">Resources</a></li>
+        <li><a href="#about" class="hover:text-teal-500">About</a></li>
+        <li><a href="#contact" class="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">Book a Discovery Call</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <ul class="flex flex-col p-4 space-y-3 text-gray-700">
+        <li><a href="#services" class="block hover:text-teal-500">Services</a></li>
+        <li><a href="#packages" class="block hover:text-teal-500">Packages</a></li>
+        <li><a href="#case-studies" class="block hover:text-teal-500">Case Studies</a></li>
+        <li><a href="#resources" class="block hover:text-teal-500">Resources</a></li>
+        <li><a href="#about" class="block hover:text-teal-500">About</a></li>
+        <li><a href="#contact" class="block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition">Book a Discovery Call</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero bg-gradient-to-r from-blue-800 to-teal-500 text-white py-20">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">From idea to validated MVP—fast.</h1>
+      <p class="mb-8 text-lg md:text-xl">Almas Applications helps founders de-risk app ideas with rigorous feasibility studies, then builds and manages the MVPs that pass the test.</p>
+      <div class="space-x-4">
+        <a href="#contact" class="inline-block bg-amber-400 text-gray-900 font-semibold px-6 py-3 rounded shadow hover:bg-amber-500 transition">Book a Discovery Call</a>
+        <a href="#resources" class="inline-block border border-white px-6 py-3 rounded hover:bg-white hover:text-blue-900 transition">Get the Feasibility Checklist</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three Key Benefits -->
+  <section class="container mx-auto px-4 py-16 max-w-6xl">
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Make better go/no-go decisions with real market data.</h3>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Reduce build risk with tight scopes, prototypes, and stage gates.</h3>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Launch faster with a pragmatic blend of no-code and custom engineering.</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credibility Logos & Testimonials (Placeholder) -->
+  <section class="bg-gray-50 py-12">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-wrap justify-center gap-10 items-center mb-12">
+        <!-- Logos -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="h-12" />
+        <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS" class="h-10" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_Analytics_Logo.svg" alt="Google Analytics" class="h-10" />
+      </div>
+
+      <h2 class="text-center text-2xl font-semibold mb-6">What Our Clients Say</h2>
+      <div class="space-y-6 text-center italic text-gray-600 max-w-3xl mx-auto">
+        <blockquote>“Almas Applications gave us clear insights and a path to build confidently.” — Tech Startup Founder</blockquote>
+        <blockquote>“Their pragmatic approach saved us months of costly development.” — Product Manager</blockquote>
+        <blockquote>“The MVP launch was smooth thanks to their expert guidance.” — Entrepreneur</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Overview Timeline -->
+  <section class="container mx-auto px-4 py-16 max-w-6xl">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Our Process</h2>
+    <div class="flex flex-col md:flex-row justify-between items-center md:space-x-4 space-y-6 md:space-y-0">
+      <div class="flex-1 text-center p-4 border border-teal-400 rounded shadow hover:shadow-lg transition cursor-default">Discover</div>
+      <div class="flex-1 text-center p-4 border border-teal-400 rounded shadow hover:shadow-lg transition cursor-default">Validate</div>
+      <div class="flex-1 text-center p-4 border border-teal-400 rounded shadow hover:shadow-lg transition cursor-default">Scope</div>
+      <div class="flex-1 text-center p-4 border border-teal-400 rounded shadow hover:shadow-lg transition cursor-default">Build</div>
+      <div class="flex-1 text-center p-4 border border-teal-400 rounded shadow hover:shadow-lg transition cursor-default">Launch</div>
+      <div class="flex-1 text-center p-4 border border-teal-400 rounded shadow hover:shadow-lg transition cursor-default">Improve</div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl font-semibold mb-10 text-center">Services</h2>
+      <div class="space-y-12">
+        <!-- Feasibility Consulting -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Feasibility Consulting</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Market sizing (TAM/SAM/SOM), competitor analysis, user discovery</li>
+            <li>Technical viability assessment</li>
+            <li>Cost–revenue modeling with go/no-go recommendation</li>
+            <li>Deliverables: feasibility report, financial model, clickable no-code prototype</li>
+            <li>Typical timeline and ideal client profile</li>
+          </ul>
+        </div>
+        <!-- Build & Operate -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Build & Operate</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>MVP scoping and UX/UI design</li>
+            <li>Development (no-code/low-code and full stack options)</li>
+            <li>QA and launch preparation</li>
+            <li>Analytics setup and ongoing app/website management</li>
+            <li>Retainer options for continuous support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="container mx-auto px-4 py-16 max-w-6xl">
+    <h2 class="text-3xl font-semibold mb-10 text-center">Packages</h2>
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-gray-300 rounded-lg overflow-hidden text-left">
+        <thead class="bg-blue-900 text-white">
+          <tr>
+            <th class="px-6 py-3">Package</th>
+            <th class="px-6 py-3">Deliverables</th>
+            <th class="px-6 py-3">Timeline</th>
+            <th class="px-6 py-3">Start</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-300 hover:bg-gray-100 transition">
+            <td class="px-6 py-4 font-semibold">Feasibility Sprint</td>
+            <td class="px-6 py-4">TAM/SAM/SOM, competitor landscape, user problem discovery, cost–revenue model, no-code prototype</td>
+            <td class="px-6 py-4">2 weeks</td>
+            <td class="px-6 py-4"><a href="#contact" class="text-teal-600 font-semibold hover:underline">Start This Package</a></td>
+          </tr>
+          <tr class="border-b border-gray-300 hover:bg-gray-100 transition">
+            <td class="px-6 py-4 font-semibold">MVP Scope & Roadmap</td>
+            <td class="px-6 py-4">User stories, tech stack/architecture, delivery plan, budget</td>
+            <td class="px-6 py-4">4–6 weeks</td>
+            <td class="px-6 py-4"><a href="#contact" class="text-teal-600 font-semibold hover:underline">Start This Package</a></td>
+          </tr>
+          <tr class="hover:bg-gray-100 transition">
+            <td class="px-6 py-4 font-semibold">Build & Launch</td>
+            <td class="px-6 py-4">MVP build, QA, analytics, CI/CD pipeline, launch checklist, 30–90 days post-launch monitoring</td>
+            <td class="px-6 py-4">6–12 weeks</td>
+            <td class="px-6 py-4"><a href="#contact" class="text-teal-600 font-semibold hover:underline">Start This Package</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Additional sections like Case Studies, Resources, About, Contact, Footer... -->
+
+  <!-- Minimal JS for mobile menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
