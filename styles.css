@@ -1,0 +1,9 @@
+.process-step {
+  background-color: #E0F2F1;
+  color: #004D40;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  flex: 1;
+}
